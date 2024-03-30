@@ -1,0 +1,371 @@
+{
+	"info": {
+		"_postman_id": "4972877c-4783-44b2-9ce2-ff5688d0b525",
+		"name": "Kata postman task",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33959662"
+	},
+	"item": [
+		{
+			"name": "https://blog.kata.academy/api/users",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MDdmNTI2OGM4MjhkMWIwMDM5NWVkMSIsInVzZXJuYW1lIjoiYW5kcmV3IiwiZXhwIjoxNzE2OTgxNTQyLCJpYXQiOjE3MTE3OTc1NDJ9.FXVQJZvdOIcGcCyYvy13HT8hY7dt9Gw8PCqZKp1-fbQ",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"user\": {\r\n    \"email\": \"labutin.99@bk.ru\",\r\n    \"password\": \"postman120postman\"\r\n  }\r\n}\r\n",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://blog.kata.academy/api/users/login",
+					"protocol": "https",
+					"host": [
+						"blog",
+						"kata",
+						"academy"
+					],
+					"path": [
+						"api",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "https://blog.kata.academy/api/users",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MDdmNTI2OGM4MjhkMWIwMDM5NWVkMSIsInVzZXJuYW1lIjoiYW5kcmV3IiwiZXhwIjoxNzE2OTgxNTQyLCJpYXQiOjE3MTE3OTc1NDJ9.FXVQJZvdOIcGcCyYvy13HT8hY7dt9Gw8PCqZKp1-fbQ",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"user\": {\r\n    \"email\": \"labutin.99@bk.ru\",\r\n    \"password\": \"postman120postman\"\r\n  }\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://blog.kata.academy/api/users/login",
+							"protocol": "https",
+							"host": [
+								"blog",
+								"kata",
+								"academy"
+							],
+							"path": [
+								"api",
+								"users",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 30 Mar 2024 12:08:42 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Vary",
+							"value": "X-HTTP-Method-Override"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"109-ttfnLrPc85yn2DiYQdif/g\""
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "noindex, nofollow, nosnippet, noarchive"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"user\": {\n        \"username\": \"andrew\",\n        \"email\": \"labutin.99@bk.ru\",\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MDdmNTI2OGM4MjhkMWIwMDM5NWVkMSIsInVzZXJuYW1lIjoiYW5kcmV3IiwiZXhwIjoxNzE2OTg0NTIyLCJpYXQiOjE3MTE4MDA1MjJ9.__bdKcoE18CPcF6cvBveP6mg799EjeS5qdKhp6oA_U0\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "https://blog.kata.academy/api/users/login",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MDdmNTI2OGM4MjhkMWIwMDM5NWVkMSIsInVzZXJuYW1lIjoiYW5kcmV3IiwiZXhwIjoxNzE2OTg0NTIyLCJpYXQiOjE3MTE4MDA1MjJ9.__bdKcoE18CPcF6cvBveP6mg799EjeS5qdKhp6oA_U0",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"user\": {\r\n    \"email\": \"labutin.99@bk.ru\",\r\n    \"password\": \"postman120postman\"\r\n  }\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://blog.kata.academy/api/users/login",
+					"protocol": "https",
+					"host": [
+						"blog",
+						"kata",
+						"academy"
+					],
+					"path": [
+						"api",
+						"users",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "https://blog.kata.academy/api/users/login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Token eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MDdmNTI2OGM4MjhkMWIwMDM5NWVkMSIsInVzZXJuYW1lIjoiYW5kcmV3IiwiZXhwIjoxNzE2OTg0NTIyLCJpYXQiOjE3MTE4MDA1MjJ9.__bdKcoE18CPcF6cvBveP6mg799EjeS5qdKhp6oA_U0",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"user\": {\r\n    \"email\": \"labutin.99@bk.ru\",\r\n    \"password\": \"postman120postman\"\r\n  }\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "https://blog.kata.academy/api/users/login",
+							"protocol": "https",
+							"host": [
+								"blog",
+								"kata",
+								"academy"
+							],
+							"path": [
+								"api",
+								"users",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 30 Mar 2024 12:13:58 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "Vary",
+							"value": "X-HTTP-Method-Override"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"109-CAO2lZbsmgu3hnZzc2/Lew\""
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "noindex, nofollow, nosnippet, noarchive"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"user\": {\n        \"username\": \"andrew\",\n        \"email\": \"labutin.99@bk.ru\",\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MDdmNTI2OGM4MjhkMWIwMDM5NWVkMSIsInVzZXJuYW1lIjoiYW5kcmV3IiwiZXhwIjoxNzE2OTg0ODM4LCJpYXQiOjE3MTE4MDA4Mzh9.etMp1WDFumwoiVfu2110B4KQ-vVPAaRZ5GM4g58Qyhk\"\n    }\n}"
+				}
+			]
+		},
+		{
+			"name": "https://blog.kata.academy/api/user",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MDdmNTI2OGM4MjhkMWIwMDM5NWVkMSIsInVzZXJuYW1lIjoiYW5kcmV3IiwiZXhwIjoxNzE2OTg0ODM4LCJpYXQiOjE3MTE4MDA4Mzh9.etMp1WDFumwoiVfu2110B4KQ-vVPAaRZ5GM4g58Qyhk",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://blog.kata.academy/api/user",
+					"protocol": "https",
+					"host": [
+						"blog",
+						"kata",
+						"academy"
+					],
+					"path": [
+						"api",
+						"user"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "https://blog.kata.academy/api/user",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "https://blog.kata.academy/api/user",
+							"protocol": "https",
+							"host": [
+								"blog",
+								"kata",
+								"academy"
+							],
+							"path": [
+								"api",
+								"user"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Server",
+							"value": "nginx/1.18.0 (Ubuntu)"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 30 Mar 2024 12:17:16 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json; charset=utf-8"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Vary",
+							"value": "Accept-Encoding"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "Express"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "ETag",
+							"value": "W/\"109-+FHAwF2Dd8+I/sXNAWmEWA\""
+						},
+						{
+							"key": "X-Robots-Tag",
+							"value": "noindex, nofollow, nosnippet, noarchive"
+						},
+						{
+							"key": "Content-Encoding",
+							"value": "gzip"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"user\": {\n        \"username\": \"andrew\",\n        \"email\": \"labutin.99@bk.ru\",\n        \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY2MDdmNTI2OGM4MjhkMWIwMDM5NWVkMSIsInVzZXJuYW1lIjoiYW5kcmV3IiwiZXhwIjoxNzE2OTg1MDM2LCJpYXQiOjE3MTE4MDEwMzZ9.LnI5TMlwa2bpJp700XhDJkRoHigR03mm6O2UZUcfQnU\"\n    }\n}"
+				}
+			]
+		}
+	]
+}
